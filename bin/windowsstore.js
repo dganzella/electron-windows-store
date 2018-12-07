@@ -81,7 +81,7 @@ setup(program)
   .then(() => manifest(program))
   .then(() => makepri(program))
   .then(() => makeappx(program))
-  .then(() => sign.signAppx(program))
+  //.then(() => sign.signAppx(program))
   .then(() => deploy(program))
   .then(() => console.log(chalk.bold.green('All done!')))
   .catch(e => {
